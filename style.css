@@ -1,0 +1,50 @@
+@charset "UTF-8";
+:root {
+    --cacau: #191815;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+div#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div#luz {
+    width: 400px;/*250*/
+    height: 480px;/*330*/
+    background-color: var(--cacau);
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    bottom: 170%;
+    right: 40%;
+    transition-duration: 0.5s;
+}
+div#receptor {
+    width: 220px;/*150*/
+    height: 220px;/*150*/
+    background-color: var(--cacau);
+    margin: 350px 100px 150px 250px;
+    border: 1px solid white;
+    border-radius: 0% 0% 20% 20%;
+}
+button.botoes {
+    width: 100px;
+    height: 50px;
+    margin: 0px 0px 0px 155px;
+    font-size: 23px;
+    background-color: var(--cacau);
+    color: white;
+    transition-duration: 0.5s;
+
+}
+button.botoes:hover {
+    box-shadow: 1px 1px 50px white;
+}
