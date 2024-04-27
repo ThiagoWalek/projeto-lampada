@@ -15,10 +15,11 @@ div#container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: auto;
 }
 div#luz {
-    width: 400px;/*250*/
-    height: 480px;/*330*/
+    width: 300px;/*250*/
+    height: 380px;/*330*/
     background-color: var(--cacau);
     border-radius: 50%;
     border: 1px solid white;
@@ -28,23 +29,38 @@ div#luz {
     transition-duration: 0.5s;
 }
 div#receptor {
-    width: 220px;/*150*/
-    height: 220px;/*150*/
+    width: 160px;/*140*/
+    height: 160px;/*140*/
     background-color: var(--cacau);
-    margin: 350px 100px 150px 250px;
+    margin: 240px auto 60px auto;
     border: 1px solid white;
     border-radius: 0% 0% 20% 20%;
+}
+
+tr,td,th {
+    border: 1px solid black;
 }
 button.botoes {
     width: 100px;
     height: 50px;
-    margin: 0px 0px 0px 155px;
     font-size: 23px;
     background-color: var(--cacau);
     color: white;
-    transition-duration: 0.5s;
-
+    transition-duration: 0.01s;
+    margin-right: 10px;
 }
-button.botoes:hover {
-    box-shadow: 1px 1px 50px white;
+button.botoes:active {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    div#luz {
+        width: 250px;
+        height: 330px;
+    }
+    div#receptor {
+        width: 140px;
+        height: 140px;
+    }
 }
